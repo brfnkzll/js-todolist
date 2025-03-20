@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LİST</title>
+  <style>
+    body {
+    background-color: #6a0dad; /* Mor arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.yazi {
+    text-shadow: none;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#tasknew {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#tasknew input {
+    width: 75%;
+    height: 40px;
+    border: 1px solid #8052ec;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tasknew button {
+    width: 20%;
+    height: 40px;
+    background-color: #8052ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tasknew button:hover {
+    background-color: #6a0dad;
+}
+
+#tasks {
+    background-color: rgb(128, 122, 122);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tasks button {
+    background-color: #8052ec;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tasks button:hover {
+    background-color: #6a0dad;
+}
+
+  </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p class="yaz">Yapılıcaklar</p>
+        <div id="tasknew">
+            <input type="text" placeholder="Yapılması Gerekenler">
+            <button id="ekle">Ekle</button>
+        </div>
+        <div id="tasks">
+            <p style="color: darkgray; text-align: center;font-size: 30px;border-bottom: 1px solid black; padding-bottom:15px ;">LİSTEM</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
